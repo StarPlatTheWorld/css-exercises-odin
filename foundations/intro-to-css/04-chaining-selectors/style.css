@@ -1,1 +1,12 @@
 /* Add CSS Styling */
+
+/* Chain Selectors. Use if several elements have similar classes, but only wish to apply unique styles to a few. */
+.avatar.proportioned {
+    width: 300px;
+    height: auto;
+}
+
+.avatar.distorted {
+    width: 200px;
+    height: 400px;
+}

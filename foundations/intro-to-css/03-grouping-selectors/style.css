@@ -1,0 +1,16 @@
+/* Below is a Group Selector. Use when multiple class or ID selectors share the same declarations. */
+
+.fake-click,
+.real-click {
+    font-size: 28px;
+    font-family: "Helvetica", "Times New Roman", "sans-serif";
+}
+
+.fake-click {
+    color: rgb(230, 214, 214);
+    background-color: rgb(145, 5, 5);
+}
+
+.real-click {
+    background-color: rgb(126, 190, 126);
+}
