@@ -2,14 +2,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Solution for .para could also be to move it further up in the cascade, giving it precedence over the group selector. */
+
 .para,
 .small-para {
   color: hsl(0, 0%, 0%);
-  font-weight: 800;
-}
-
-.small-para {
-  font-size: 14px;
   font-weight: 800;
 }
 
@@ -17,7 +14,17 @@ body {
   font-size: 22px;
 }
 
-.confirm {
+/* Added a chain selector to the .small-para declaration, improving it specificity level. */
+
+p.small-para {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+
+/* Changed from a class selector to an ID selector as IDs take priority over classes. */
+
+#confirm-button {
   background: green;
   color: white;
   font-weight: bold;
@@ -29,7 +36,7 @@ body {
   font-size: 20px;
 }
 
-.child {
+.text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
