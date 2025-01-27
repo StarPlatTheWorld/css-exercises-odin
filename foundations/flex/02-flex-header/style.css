@@ -1,6 +1,13 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  /* Changes Display Type to Flex */
+  display: flex;
+  /* Centers items on the cross axis */
+  align-items: center;
+  /* Creates space between each item evenly on the primary axis */
+  justify-content: space-between;
+  padding: 8px;
 }
 
 .logo {
@@ -14,6 +21,12 @@
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  margin: 0;
+  /* Changes Display Type To Flex */
+  display: flex;
+  padding: 0;
+  /* Creates a gap between each item */
+  gap: 4px;
 }
 
 a {
